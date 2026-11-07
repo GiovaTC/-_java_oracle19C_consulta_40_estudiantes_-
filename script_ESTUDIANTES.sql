@@ -35,3 +35,46 @@ FROM DUAL
 CONNECT BY LEVEL <= 40;
 
 COMMIT;
+
+--5.3 Crear el procedimiento almacenado
+--El procedimiento abre un cursor con los primeros 40 estudiantes
+--ordenados por ID.
+CREATE OR REPLACE PROCEDURE PR_CONSULTAR_40_ESTUDIANTES (
+    P_RESULTADO OUT SYS_REFCURSOR
+)
+AS
+BEGIN
+    OPEN P_RESULTADO FOR
+        SELECT
+            ID,
+            NOMBRE,
+            APELLIDO,
+            EDAD,
+            PROGRAMA,
+            CORREO
+        FROM ESTUDIANTES
+        ORDER BY ID
+        FETCH FIRST 40 ROWS ONLY;
+END PR_CONSULTAR_40_ESTUDIANTES;
+/
+
+COMMIT;
+
+VARIABLE RESULTADO REFCURSOR;
+
+EXEC PR_CONSULTAR_40_ESTUDIANTES(:RESULTADO);
+
+PRINT RESULTADO;
+
+--5.5 Verificar la cantidad de registros.
+SELECT COUNT(*) AS TOTAL_ESTUDIANTES FROM ESTUDIANTES;
+
+--Para consultar los datos directamente:
+SELECT
+    ID,
+    NOMBRE,
+    APELLIDO,
+    EDAD,
+    PROGRAMA,
+    CORREO
+FROM ESTUDIANTES ORDER BY ID;
