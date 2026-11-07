@@ -3,6 +3,8 @@ JavaOracle19C_Consulta40Estudiantes:
 
 <img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/490175e1-9516-4537-ab85-a6ddee7b04e1" />  
 
+<img width="2556" height="1076" alt="image" src="https://github.com/user-attachments/assets/2abbb259-9843-4b86-b566-c6312ce090b1" />  
+
 <img width="2544" height="1076" alt="image" src="https://github.com/user-attachments/assets/30257d4e-b47b-4779-b386-c80ff0aed6e5" />  
 
 ```
