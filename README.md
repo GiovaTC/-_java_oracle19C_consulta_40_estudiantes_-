@@ -5,6 +5,8 @@ JavaOracle19C_Consulta40Estudiantes:
 
 <img width="2556" height="1076" alt="image" src="https://github.com/user-attachments/assets/2abbb259-9843-4b86-b566-c6312ce090b1" />  
 
+<img width="2552" height="1078" alt="image" src="https://github.com/user-attachments/assets/0d0b39bb-8f79-47c6-a8b3-6147f050a93d" />  
+
 <img width="2544" height="1076" alt="image" src="https://github.com/user-attachments/assets/30257d4e-b47b-4779-b386-c80ff0aed6e5" />  
 
 ```
